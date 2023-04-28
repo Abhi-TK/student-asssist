@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Report issue</title>
+  {{>header}}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+{{>navbar}}
+    <div style="max-width: 400px;">
+    </div>
+    <div style="padding-bottom: 18px;font-size : 24px;">Report An Issue</div>
+    <div style="padding-bottom: 18px;">Reported by<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+    </div>
+    
+    <div style="padding-bottom: 18px;">Priority<br/>
+    <select id="data_4" name="data_4" style="max-width : 300px;" class="form-control"><option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+    </select>
+    </div>
+    <div style="padding-bottom: 18px;">Satisfactory<br/>
+    <select id="data_5" name="data_5" style="max-width : 300px;" class="form-control"><option>10%</option>
+    <option>25%</option>
+    <option>50%</option>
+    <option>75%</option>
+    <option>100%</option>
+    </select>
+    </div>
+    <div style="padding-bottom: 18px;">Summary<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_6" name="data_6" style="max-width : 450px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Description<br/>
+    <textarea id="data_7" false name="data_7" style="max-width : 450px;" rows="6" class="form-control"></textarea>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-block btn-outline-dark" href="mailto:ananthjeeva98@gmail.com" role="button">Submit</a>
+    </div>
+    </form>
+</body>
+</html>
